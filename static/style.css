@@ -1,0 +1,57 @@
+
+
+body{
+    background-color: #fafbfc;
+}
+
+.food-img {
+    width: 250px;
+    /* object-fit: cover; */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.li2 {
+    visibility: hidden;
+}
+
+.image-header{
+    background-image: url(/static/img/nigerian-food.jpeg);
+    background-size: cover;
+    background-color: rgba(114, 206, 248, 0.51); /* Tint color */
+    background-blend-mode: multiply;
+
+}
+
+.not-found{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    padding-bottom: 20%;
+}
+
+/* dark mode */
+.dark-mode{
+    background-color: #072c52;
+    color: #fafbfc;
+   transition: color 2s;
+   transition: background-color 2s;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .food-img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+   img{
+    width: -webkit-fill-available;
+   }
+
+    .li2 {
+        display: none;
+    }
+  }
+  
