@@ -11,6 +11,11 @@ body{
     object-fit: cover;
 }
 
+.food-img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .li2 {
     visibility: hidden;
 }
@@ -35,9 +40,11 @@ body{
 .dark-mode{
     background-color: #072c52;
     color: #fafbfc;
-   transition: color 2s;
-   transition: background-color 2s;
+   transition: color 1s;
+   transition: background-color 1s;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     
@@ -52,6 +59,10 @@ body{
 
     .li2 {
         display: none;
+    }
+
+    form, .form-group{
+        min-width: 100%!important;
     }
   }
   
